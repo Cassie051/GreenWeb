@@ -1,4 +1,9 @@
 .container
 {
-    background-color: azure;
+    background-color: white;
+}
+
+nav.navbar-green
+{
+    background-color: #8bc34a;
 }
