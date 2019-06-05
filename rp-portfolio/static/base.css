@@ -1,4 +1,58 @@
-nav.navbar-green
-{
-    background-color: #8bc34a;
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+nav.navbar-green {
+    background-color:#F1F1F1;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #42322c;
+    background-color:#8bc34a;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(66, 50, 44)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+img.nav-img {
+    width:130px;
+    height: auto;
+}
+
+a {
+    color: #42322c;
+}
+a:hover {
+    color:  #8bc34a;
+}
+
+footer.page-footer {
+    background-color:#F1F1F1;
+    color: #42322c;
+    font-size: 90%;
+}
+
+.footer-img {
+    width: 24px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+/* homepage.css */
+
+/* project.css */
+
+.line-color {
+    background-color: rgba(55, 231, 67, 0.63);
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.whitetext {
+    color: rgb(34, 34, 34);
+}
+.space {
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+

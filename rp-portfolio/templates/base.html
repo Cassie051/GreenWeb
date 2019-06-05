@@ -2,52 +2,93 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static 'base.css' %}" />
-  <link rel="shortcut icon" href=""/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'base.css' %}" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="{% static 'gallery.js' %}"/>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-green">
-        <div class="container">
-            <a class="navbar-brand" href="{% url 'homepage' %}">"NATURA"</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-green">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="{% url 'homepage' %}">
+                    <img src="{% static 'img/logo.png' %}" class="nav-img" alt="">
+                    Natura
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse w-100 order-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'homepage' %}">
+                            Strona główna
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'company' %}">
+                             O firmie   
+                            </a>
+                        </li>
     
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'homepage' %}">
-                        Strona główna
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'company' %}">
-                         O firmie   
-                        </a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'project_index' %}">
-                            Oferty
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'gallery' %}">
-                            Galeria
-                        </a>
-                    </li>        
-                </ul>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'project_index' %}">
+                                Oferty
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'gallery' %}">
+                                Galeria
+                            </a>
+                        </li>        
+                    </ul>
+                </div>
             </div>
-        </div>
-    
-    </nav>  
-    
-    <div class="container">
+        
+        </nav>      
+    </header>
+    <article>    
         {% block page_content %}{% endblock %}
-    </div>
+    </article>
 
+<footer class="page-footer font-small teal pt-4">
+    <div class="container-fluid text-left text-md-left">
+        <div class="row">
+            <div class="col-md-3 mt-md-0 mt-6">
+            </div> 
+            <div class="col-md-3 mt-md-0 mt-6">
+                <h6 class="font-weight-bold"> Zakład Utrzymania i Urządzania Zieleni "NATURA" </h6>
+                <hr class="col-md-3 mt-md-0 mt-6">
+                <p>
+                    Nasza firma zapewnia usługi na terenie Warszawy i okolic.
+                </p>
+            </div> 
+
+            <hr class="clearfix w-100 d-md-none pb-3"/>       
+            
+            <div class="col-md-3 mt-md-0 mt-3">
+                <h6 class="font-weight-bold"> Kontakt </h6>
+                <hr class="col-md-3 mt-md-0 mt-6"">
+                <p>
+                    <img src="{% static 'img/home.png' %}" class="footer-img" align="middle"> Żymirskiego 1/41, 04-045 Warszawa
+                </p>
+                <p>
+                        <img src="{% static 'img/mail.png' %}" class="footer-img" align="middle"> dcz3@o2.pl</p>
+                </p>
+                <p>
+                        <img src="{% static 'img/phone.png' %}" class="footer-img" align="middle"> 501 047 478</p>
+                </p>
+            </div>                       
+        
+            <div class="col-md-3 mt-md-0 mt-6 ">
+            </div> 
+           
+        </div>
+    </div>
+</footer>
+    
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
