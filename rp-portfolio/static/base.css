@@ -39,6 +39,12 @@ footer.page-footer {
 
 
 /* homepage.css */
+.carousel-caption {
+    text-align: left;
+    max-width: 40%;
+    left: 65%;
+    top: 45%;
+}
 
 /* project.css */
 
