@@ -48,7 +48,11 @@ footer.page-footer {
     top: 45%;
 }
 
-
+/* company.css */
+.video-fluid {
+    width: 100%;
+    height: auto;
+  }
 
 /* project.css */
 
