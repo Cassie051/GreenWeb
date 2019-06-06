@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav.navbar-green {
@@ -15,7 +15,7 @@ nav.navbar-green {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(66, 50, 44)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 img.nav-img {
-    width:130px;
+    width:145px;
     height: auto;
 }
 
@@ -35,8 +35,8 @@ footer.page-footer {
 .footer-img {
     width: 24px;
     height: auto;
-    margin-bottom: 6px;
 }
+
 
 /* homepage.css */
 
