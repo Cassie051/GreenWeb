@@ -1,0 +1,3 @@
+venv
+rp-portfolio/*/__pycache__
+rp-portfolio/*/migrations

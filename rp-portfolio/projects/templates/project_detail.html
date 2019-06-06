@@ -1,18 +1,33 @@
+<!DOCTYPE html>
+
 {% extends "base.html" %}
 {% load static %}
 
 {% block page_content %}
-<h1>{{ project.title }}</h1>
-<div class="row">
-    <div class="col-md-8">
-        <img src="{% static project.image %}" alt="" width="100%">
-    </div>
-    <div class="col-md-4">
-        <h5>Opis projektu:</h5>
-        <p>{{ project.description }}</p>
-        <br>
-        <h5>Data realizacji:</h5>
-        <p>{{ project.date }}</p>
+
+<div class="container-fluid line-color">
+        <div class="container">
+                <h1 class="whitetext">{{ project.title }}</h1>
+        </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+            <div class="row space">
+                    <div class="col-md-8">
+                        <img src="{% static project.image %}" alt="" width="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Opis projektu:</h5>
+                        <p>{{ project.description }}</p>
+                        <br>
+                        <h5>Data realizacji:</h5>
+                        <p>{{ project.date }}</p>
+                    </div>
+                </div>
     </div>
 </div>
+
+
+
 {% endblock %}

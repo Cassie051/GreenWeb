@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<div class="container-fluid line-color">
+        <div class="container">
+            <h1 class="whitetext"> O firmie </h1>
+        </div>
+</div>
+
+<div class="container-fluid">
+        <div class="container space">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Zakład Utrzymania i Urządzania Zieleni NATURA istnieje na rynku od 2005 roku. 
+                    </p>
+                
+                    <p>
+                        Celem działalności firmy jest dostarczenie naszym klientom usług na najwyższym poziomie  w zakresie: pielęgnacji i utrzymania zieleni, zakładania terenów zieleni, wycinki drzew i krzewów. Prace związane z wycinką i pielęgnacją  prowadzone są metodą tradycyjną oraz alpinistyczną.
+                    </p>
+                
+                    <p>
+                        Dysponujemy specjalistycznym sprzętem do wykonywania robót ogrodniczych.         
+                    </p>
+                    
+                    <p>
+                        Zapraszamy do zapoznania się z naszą ofertą.
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <video class="video-fluid" autoplay loop controls muted>
+                            <source src="{% static 'work.mp4' %}" type="video/mp4" />
+                          </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
