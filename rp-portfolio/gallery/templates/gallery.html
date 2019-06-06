@@ -4,65 +4,86 @@
 
 {% block page_content %}
 
-<div class="row">
-
-    <div class="col-lg-4">
-      <a href="{% static 'img/ogrod.png' %}">
-        <img alt="picture" src="{% static 'img/ogrod.png' %}"
-          class="img-fluid">
-      </a>
-    </div>
-    <div class="col-lg-4">
-        <a href="{% static 'img/ogrod1.png' %}">
-          <img alt="picture" src="{% static 'img/ogrod1.png' %}"
-            class="img-fluid">
-        </a>
-    </div>
-    <div class="col-lg-4">
-        <a href="{% static 'img/ogrod4.png' %}">
-          <img alt="picture" src="{% static 'img/ogrod4.png' %}"
-            class="img-fluid">
-        </a>
-    </div>
-    <div class="col-lg-4">
-        <a href="{% static 'img/ogrod3.png' %}">
-          <img alt="picture" src="{% static 'img/ogrod3.png' %}"
-            class="img-fluid">
-        </a>
-    </div>
-    <div class="col-lg-4">
-      <a href="{% static 'img/realizacja.png' %}">
-        <img alt="picture" src="{% static 'img/realizacja.png' %}"
-          class="img-fluid" />
-      </a>
-    </div>
-    <div class="col-lg-4">
-        <a href="{% static 'img/realizacja1.png' %}">
-          <img alt="picture" src="{% static 'img/realizacja1.png' %}"
-            class="img-fluid" />
-        </a>
-    </div>
-
-    <div class="col-lg-4">
-        <a href="{% static 'img/realizacja2.png' %}">
-          <img alt="picture" src="{% static 'img/realizacja2.png' %}"
-            class="img-fluid" />
-        </a>
-    </div>
-    <div class="col-lg-4">
-        <a href="{% static 'img/realizacja3.png' %}">
-          <img alt="picture" src="{% static 'img/realizacja3.png' %}"
-            class="img-fluid" />
-        </a>
-    </div>
-    
-    <div class="col-lg-4">
-        <a href="{% static 'img/realizacja4.png' %}">
-          <img alt="picture" src="{% static 'img/realizacja3.png' %}"
-            class="img-fluid" />
-        </a>
-    </div>
+<div class="container-fluid line-color">
+        <div class="container">
+            <h1 class="whitetext"> Galeria </h1>
+        </div>
 </div>
-      
+
+<div class="container-fluid">
+    <div class="container space">
+		<div class="row space">
+
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/ogrod.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/ogrod.png' %}" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/ogrod1.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/ogrod1.png' %}" alt=""/>
+				</a>
+			</div>
+
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/ogrod4.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/ogrod4.png' %}" alt=""/>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="row space">
+
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/ogrod3.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/ogrod3.png' %}" alt=""/>
+				</a>
+			</div>
+			
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/realizacja.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/realizacja.png' %}" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/realizacja1.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/realizacja1.png' %}" alt=""/>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="row space">
+
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/realizacja2.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/realizacja2.png' %}" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/realizacja3.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/realizacja3.png' %}" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="example-image-link" href="{% static 'img/realizacja4.png' %}" data-lightbox="example-set" data-title="Kliknij prawą strzałkę aby przejść dalej.">
+					<img class="example-image img-fluid" src="{% static 'img/realizacja4.png' %}" alt=""/>
+				</a>
+			</div>
+		</div>
+
+		<!-- solved the "space" problem-->
+		<div class="row space">
+0			
+		</div>
+	</div>
+	
+</div>
+	
+	
+</script>
+
+
 
 {% endblock %}
