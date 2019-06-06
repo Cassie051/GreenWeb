@@ -1,5 +1,6 @@
 venv
 rp-portfolio/*/__pycache__
+<<<<<<< HEAD
 rp-portfolio/*/migrations
 # compiled output
 /dist
@@ -90,3 +91,6 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+=======
+rp-portfolio/*/migrations
+>>>>>>> 55bbb9b85f2d5bfd96e50a50863b14d241a2f5ae
