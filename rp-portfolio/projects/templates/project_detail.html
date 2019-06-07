@@ -12,19 +12,22 @@
 </div>
 
 <div class="container-fluid">
-    <div class="container">
-            <div class="row space">
-                    <div class="col-md-8">
-                        <img src="{% static project.image %}" alt="" width="100%">
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Opis projektu:</h5>
-                        <p>{{ project.description }}</p>
-                        <br>
-                        <h5>Data realizacji:</h5>
-                        <p>{{ project.date }}</p>
-                    </div>
+    <div class="container space"">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="{% static project.image %}" alt="" width="100%">
                 </div>
+                <div class="col-md-4">
+                    <h5>Opis projektu:</h5>
+                    <p>{{ project.description }}</p>
+                    <br>
+                    <h5>Data realizacji:</h5>
+                    <p>{{ project.date }}</p>
+                </div>
+            </div>
+            <div class="row space"">
+
+            </div>
     </div>
 </div>
 
